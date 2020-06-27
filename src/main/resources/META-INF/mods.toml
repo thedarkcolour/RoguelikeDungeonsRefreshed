@@ -1,0 +1,26 @@
+# Make sure this is set to "kotlinforforge"
+modLoader="kotlinforforge"
+# Make sure this is set to the appropriate version range
+loaderVersion="[1.3.1,)" # Versions 1.3.x and up
+
+[[mods]]
+modId="roguelikedungeons"
+version="${file.jarVersion}"
+displayName="Roguelike Dungeons"
+credits="Greymerk for originally creating this mod."
+authors="TheDarkColour"
+description='''
+Roguelike Dungeons for 1.15+.
+'''
+[[dependencies.roguelikedungeons]]
+    modId="forge"
+    mandatory=true
+    versionRange="[31.2,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.roguelikedungeons]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15.2]"
+    ordering="NONE"
+    side="BOTH"
